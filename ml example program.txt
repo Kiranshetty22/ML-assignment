@@ -1,0 +1,59 @@
+1. Write a Python program which accepts the user's first and last name and print them inreverse order with a space between them
+
+program:
+firstname = input("Input your First Name : ")
+lastname = input("Input your Last Name : ")
+print ("Hello  " + lastname + " " + firstname)
+
+2. Write a Python program to calculate number of days between two dates.
+
+program:
+from datetime import date
+ f_date = date(2014, 7, 6)
+ l_date = date(2014, 7, 11)
+ d = l_date - f_date
+ print(d.days)
+
+3.Write a Python program to test whether a passed letter is a vowel or not
+
+program:
+l = input("Input a letter of the alphabet: ")
+
+if l in ('a', 'e', 'i', 'o', 'u'):
+	print("%s is a vowel." % l)
+elif l == 'y':
+	print("Sometimes letter y stand for vowel, sometimes stand for consonant.")
+else:
+	print("%s is a consonant." % l) 
+
+
+4.Write a Python program to sum of three given integers. However, if two values are equal sum will be zero.
+
+
+program:
+def sum(x, y, z):
+    if x == y or y == z or x==z:
+        sum = 0
+    else:
+        sum = x + y + z
+    return sum
+
+print(sum(2, 1, 2))
+print(sum(3, 2, 2))
+print(sum(2, 2, 2))
+print(sum(1, 2, 3))
+
+5.Write a Python program to count the number of characters (character frequency) in a string.
+
+program:
+
+def char_frequency(str1):
+    dict = {}
+    for n in str1:
+        keys = dict.keys()
+        if n in keys:
+            dict[n] += 1
+        else:
+            dict[n] = 1
+    return dict
+print(char_frequency('kiran.shetty'))
